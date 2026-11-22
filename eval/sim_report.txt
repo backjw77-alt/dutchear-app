@@ -1,0 +1,64 @@
+■ A 한 화면(지문+질문)
+  프레임1: OCR 1221ms(테스트용 Tesseract) 선명도 8.6 conf 0.94 → 좌우 지문O 질문O(선택지 3) 잘림=false 합치기 810µs
+      질문: A een rustige plek zoeken ⏎ B een planning maken ⏎ Cc nadenken over de inhoud | 지문 14줄
+  → 저장된 지문 1개: #1 14줄
+  → 지문 문장 복원 12/12, 중복 줄 0, 순서 보존
+  → Q1 근거문장 지문 메모리 포함 1.00
+
+■ B 좌우 이동
+  프레임1: OCR 924ms(테스트용 Tesseract) 선명도 11.1 conf 0.93 → 좌우 지문O 질문O(선택지 3) 잘림=true 합치기 457µs
+      질문: A een rustig ⏎ B een planni ⏎ Cc nadenken | 지문 14줄
+  프레임2: OCR 448ms(테스트용 Tesseract) 선명도 5.6 conf 0.93 → 질문만 지문X 질문O(선택지 3) 잘림=false 합치기 -
+      질문: A een rustige plek zoeken ⏎ B een planning maken ⏎ Cc nadenken over de inhoud | 지문 0줄
+  → 저장된 지문 1개: #1 14줄
+  → 지문 문장 복원 12/12, 중복 줄 0, 순서 보존
+  → Q1 근거문장 지문 메모리 포함 1.00
+
+■ C 지문이 여러 프레임
+  프레임1: OCR 498ms(테스트용 Tesseract) 선명도 14.7 conf 0.94 → 지문만 지문O 질문X 잘림=false 합치기 2014µs
+      질문: - | 지문 11줄
+  프레임2: OCR 505ms(테스트용 Tesseract) 선명도 14.3 conf 0.95 → 지문만 지문O 질문X 잘림=false 합치기 2735µs
+      질문: - | 지문 6줄
+  프레임3: OCR 293ms(테스트용 Tesseract) 선명도 8.3 conf 0.94 → 지문만 지문O 질문X 잘림=false 합치기 1072µs
+      질문: - | 지문 2줄
+  프레임4: OCR 405ms(테스트용 Tesseract) 선명도 5.7 conf 0.91 → 질문만 지문X 질문O(선택지 3) 잘림=false 합치기 -
+      질문: A een rustige plek zoeken ⏎ B een planning maken ⏎ Cc nadenken over de inhoud | 지문 0줄
+  → 저장된 지문 1개: #1 15줄
+  → 지문 문장 복원 12/12, 중복 줄 0, 순서 보존
+  → Q1 근거문장 지문 메모리 포함 1.00
+
+■ D 같은 지문 여러 질문
+  프레임1: OCR 1220ms(테스트용 Tesseract) 선명도 8.6 conf 0.92 → 좌우 지문O 질문O(선택지 3) 잘림=false 합치기 542µs
+      질문: A _ eenrustige plek zoeken ⏎ B een planning maken ⏎ Cc nadenken over de inhoud | 지문 14줄
+  프레임2: OCR 419ms(테스트용 Tesseract) 선명도 6.0 conf 0.54 → 질문만 지문X 질문O(선택지 3) 잘림=false 합치기 -
+      질문: A — naeenhalf uur leren ⏎ B  naelke bladzijde ⏎ C pas naeen hele dag | 지문 0줄
+  프레임3: OCR 448ms(테스트용 Tesseract) 선명도 6.2 conf 0.77 → 질문만 지문X 질문O(선택지 3) 잘림=false 합치기 -
+      질문: A alles op één dag leren ⏎ B  aaniemand anders uitleggen wat hij heeft gelezen ⏎ C de tekst niet nog een keer  | 지문 0줄
+  → 저장된 지문 1개: #1 14줄
+  → 지문 문장 복원 12/12, 중복 줄 0, 순서 보존
+  → Q1 근거문장 지문 메모리 포함 1.00
+  → Q2 근거문장 지문 메모리 포함 1.00
+  → Q3 근거문장 지문 메모리 포함 1.00
+
+■ E 흐림/잘림
+  프레임1: OCR 1244ms(테스트용 Tesseract) 선명도 4.7 conf 0.27 → 지문만 지문O 질문X 잘림=false 합치기 -
+      질문: - | 지문 20줄
+  프레임2: OCR 486ms(테스트용 Tesseract) 선명도 14.3 conf 0.95 → 지문만 지문O 질문X 잘림=false 합치기 218µs
+      질문: - | 지문 8줄
+  프레임3: OCR 1152ms(테스트용 Tesseract) 선명도 8.6 conf 0.91 → 좌우 지문O 질문O(선택지 3) 잘림=false 합치기 7165µs
+      질문: A _ eenrustige plek zoeken ⏎ B een planning maken ⏎ C ___sonadenken over de inhoud | 지문 14줄
+  → 저장된 지문 1개: #1 15줄
+  → 지문 문장 복원 12/12, 중복 줄 0, 순서 보존
+  → Q1 근거문장 지문 메모리 포함 1.00
+
+■ F 새 지문
+  프레임1: OCR 1222ms(테스트용 Tesseract) 선명도 8.6 conf 0.93 → 좌우 지문O 질문O(선택지 3) 잘림=false 합치기 450µs
+      질문: A een rustige plek zoeken ⏎ B een planning maken ⏎ C ___snadenken over de inhoud | 지문 14줄
+  프레임2: OCR 1010ms(테스트용 Tesseract) 선명도 9.4 conf 0.88 → 상하 지문O 질문O(선택지 3) 잘림=false 합치기 5584µs
+      질문: 1. Sinds vorig jaar werkt Sanne als vrijwilliger bij ⏎ a ⏎ es ⏎ oe ⏎ Wat vindt Sanne tegenwoordig van ⏎ de buu | 지문 5줄
+  프레임3: OCR 1120ms(테스트용 Tesseract) 선명도 8.6 conf 0.92 → 좌우 지문O 질문O(선택지 3) 잘림=false 합치기 7107µs
+      질문: A — eenrustige plek zoeken ⏎ B een planning maken ⏎ Cc nadenken over de inhoud | 지문 14줄
+  → 저장된 지문 2개: #1 14줄, #2 5줄
+  → 지문 문장 복원 12/12, 중복 줄 0, 순서 보존
+  → Q1 근거문장 지문 메모리 포함 1.00
+
